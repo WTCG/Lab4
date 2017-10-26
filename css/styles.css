@@ -28,10 +28,33 @@ main {
 section {
   font-size: 1em;
   background: #888;
-  width: 22%;
+  /* width: 22%; */
   margin: 1em 1% 1em 1%;
-  display: inline-block;
+  /* display: inline-block; */
 }
 section:hover {
   background: #666;
+}
+
+@media screen and (min-width: 500px) {
+  body {
+	 
+	  background: blue;
+  }
+  section {
+	  display: inline-block;
+	  width: 45%;
+  }
+  
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+	  
+	  background: white;
+     }
+   section {
+	       width: 22%;
+	       display: inline-block;  
+           }
 }
